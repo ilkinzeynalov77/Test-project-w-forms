@@ -25,7 +25,6 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(Directory.GetCurrentDirectory());
             string path = Directory.GetCurrentDirectory() + @"\..\..\..\..\" +textbox.Text + ".txt";
             FileStream fileStream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite);
             StreamWriter streamWriter = new StreamWriter(fileStream);
